@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+  .nav-container { position: relative; justify-content: space-between; }
+  .hamburger { display: block; }
+  .logo { position: absolute; left: 50%; transform: translateX(-50%); } /* Centered logo on mobile */
+  
+  .nav-list { position: fixed; top: 80px; left: -100%; width: 100%; height: calc(100vh - 80px); background: var(--white); flex-direction: column; justify-content: center; align-items: center; transition: var(--transition); z-index: 999; }
+  .nav-list.active { left: 0; }
+  
+  .grid-3 { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero h1, .page-header h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 480px) {
+  .footer-grid { grid-template-columns: 1fr; }
+}
